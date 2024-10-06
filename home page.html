@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        /* Fullscreen video background */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Behind other elements */
+        }
+
+        .normal-button {
+            background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            position: absolute; /* For layering */
+            bottom: 20px; /* Position at the bottom */
+            right: 20px; /* Position at the right */
+            z-index: 1; /* Above the video */
+            text-decoration: none; /* Remove underline from link */
+        }
+
+        /* Right side content box */
+        .right-content-box {
+            width: 300px; /* Fixed width for the right content box */
+            background-color: rgba(6, 5, 5, 0.9); /* Semi-transparent background */
+            height: 80vh; /* Reduced height for the right content box */
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 20px;
+            box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2); /* Shadow for the box */
+            z-index: 1; /* Above the video */
+            overflow-y: auto; /* Allow scrolling inside the box if needed */
+        }
+
+        /* New content box below the left content box */
+        .left-content-box-2 {
+            width: 280px; /* Same width as the first left content box */
+            background-color: rgb(9, 1, 7); /* Dark background */
+            position: absolute;
+            top: 330px; /* Moved down by 1 cm from 310px to 311px */
+            left: 94px; /* Moved right by 1 cm from 20px to 21px */
+            padding: 20px;
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2); /* Shadow for the box */
+            z-index: 1; /* Above the video */
+        }
+
+        /* Style content inside the boxes */
+        .content-box h3 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #eeeaea;
+        }
+
+        .content-box p {
+            font-size: 16px;
+            color: #f4eded;
+        }
+
+        .left-content-box-2 h3, .left-content-box-2 p {
+            color: #f0ecec; /* Light text for the left box */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video background -->
+    <video autoplay loop muted class="video-background">
+        <source src="video bg.mp4" type="video/mp4"> <!-- Replace with your video file -->
+    </video>
+
+    <!-- Button in bottom right corner -->
+    <a href="page 1.html" class="normal-button bottom-right">Click here to enter</a>
+
+    <!-- Right side content box -->
+    <div class="right-content-box content-box">
+        <h3>Global Warming in US:</h3>
+        <p><i>Over the past 24 years, global warming has led to significant climate changes in the U.S., including rising temperatures, more frequent and intense heatwaves, wildfires, and extreme weather events like hurricanes and floods. Average temperatures have risen by around 1.8°F (1°C) since the late 20th century. The western U.S. has experienced prolonged droughts, while sea levels have risen along the coasts, increasing flood risks. The changing climate has also disrupted ecosystems, agriculture, and water supplies, affecting daily life. These trends have accelerated in recent years, driven by increased greenhouse gas emissions from human activities.</i></p>
+    </div>
+
+    <!-- New left side content box (yellow) -->
+    <div class="left-content-box-2">
+        <h3>Global Warming Data of the UNITED STATES from 2000-2024</h3>
+    </div>
+
+</body>
+</html>

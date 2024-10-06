@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2021-2024 Data</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Styling for the text */
+        h2, p {
+            color: white;
+            text-align: center;
+            z-index: 1;
+            position: absolute;
+            filter: brightness(100%); /* Normal brightness for text */
+        }
+
+        /* Normal brightness for inline image */
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 40%; /* Adjusted width of the image */
+            height: auto;
+            filter: brightness(100%);
+            z-index: 1;
+            position: relative;
+        }
+
+        /* Styling the content box */
+        .content-box {
+            width: 90%; /* Increased width for more space */
+            max-width: 1000px; /* Larger max-width */
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            border: 6px solid #fff;
+            padding: 20px; /* Adjusted padding for better fit */
+            text-align: center;
+            justify-content: center;
+            z-index: 5; /* Ensure the box is above background */
+            position: relative;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* More prominent shadow */
+        }
+
+        .content-box h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .content-box p {
+            color: #666;
+            font-size: 14px; /* Adjusted font size for the paragraph */
+            margin: 10px 0; /* Space around the paragraph */
+        }
+
+        .home-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background-color: #010c01;
+            border: none;
+            color: rgb(248, 240, 240);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        table {
+            width: 100%; /* Set to 100% to make it responsive */
+            border-collapse: collapse;
+            margin: 20px auto; /* Center the table */
+            font-size: 14px; /* Reduced font size for the table */
+            color: #333;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px; /* Slightly increased padding for better fit */
+            text-align: center;
+            word-wrap: break-word; /* Allow words to break */
+        }
+
+        table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <a href="page 1.html" class="home-button">Back</a>
+
+    
+    <!-- Larger content box centered in the page -->
+    <div class="content-box">
+        <h3>US Data Predicted 2030</h3>
+        <img src="predicted.webp" alt="Image for 2021-2024 Data"> <!-- Use correct path -->
+        
+        <!-- Table with content -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Avg Temp (°F)</th>
+                    <th>Urban Impact (%)</th>
+                    <th>Global Impact (%)</th>
+                    <th>Extreme Weather Events</th>
+                    <th>CO2 Emissions (Mt)</th>
+                    <th>Avg Precipitation (in)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2030</td>
+                    <td>55.2</td>
+                    <td>15.0</td>
+                    <td>11.8</td>
+                    <td>38</td>
+                    <td>5,300</td>
+                    <td>34.0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- New paragraph added below the table -->
+        <p><i><h4>
+                   
+                By 2030, CO2 emissions are projected to reach 5,300 Mt, reflecting an ongoing upward trend from previous years. Immediate action is needed!
+
+            </h4></i></p>
+    </div>
+</body>
+</html>

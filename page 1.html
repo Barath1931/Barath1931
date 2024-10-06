@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa Space App : US Data</title>
+    <style>
+        .video-background {
+            position:relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Behind other elements */
+        }
+
+        /* Overlay to reduce brightness */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        /* Timeline styling */
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px -2px 10px rgba(210, 47, 47, 0.1);
+            z-index: 1000;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #f69d9d;
+            z-index: 1;
+        }
+
+        .button-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .timeline button {
+            background-color: #b7f3b9;
+            border: none;
+            color: rgb(8, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .timeline button:hover {
+            background-color: #ace6b0;
+        }
+
+        /* Home button style */
+        .home-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background-color: #74c474;
+            border: none;
+            color: rgb(248, 240, 240);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #ace6b0;
+        }
+
+        /* Compare button style */
+        .compare-button {
+            position: fixed;
+            top: 10px;
+            left: 120px;
+            z-index: 1000;
+            background-color: #f39c12;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .compare-button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Content area where timeline data will be loaded */
+        .content {
+            position: fixed;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: calc(100% - 150px);
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow-y: auto;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+     <!-- Video background -->
+     <video autoplay loop muted class="video-background">
+        <source src="video 1 bg.mp4" type="video/mp4"> <!-- Replace with your video file -->
+    </video>
+
+
+    <div class="overlay"></div> <!-- Overlay div to reduce brightness -->
+
+    <!-- Home button that links to the existing HTML file (e.g., index.html) -->
+    <a href="home page.html" class="home-button">Home</a>
+
+    <!-- Compare button that links to another HTML file (e.g., compare.html) -->
+    <a href="page compare.html" class="compare-button">Compare</a>
+
+    <!-- Content area where the timeline sections will be displayed -->
+    <div id="content" class="content"></div>
+
+    <div class="timeline">
+        <div class="button-container">
+            <button onclick="openFile('data_2000_2005.html')">2000-2005</button>
+        </div>
+        <div class="button-container">
+            <button onclick="openFile('data_2006_2010.html')">2006-2010</button>
+        </div>
+        <div class="button-container">
+            <button onclick="openFile('data_2011_2015.html')">2011-2015</button>
+        </div>
+        <div class="button-container">
+            <button onclick="openFile('data_2016_2020.html')">2016-2020</button>
+        </div>
+        <div class="button-container">
+            <button onclick="openFile('data_2021_2024.html')">2021-2024</button>
+        </div>
+        <div class="button-container">
+            <button onclick="openFile('data_2030_predicted.html')">Predicted (2030)</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to open an existing HTML file
+        function openFile(fileName) {
+            window.open(fileName, '_self'); // Opens the specified file in the same tab
+        }
+    </script>
+
+
+</body>
+</html>

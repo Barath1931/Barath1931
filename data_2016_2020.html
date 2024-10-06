@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2016-2020 Data</title>
+    <style>
+        
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Styling for the text */
+        h2, p {
+            color: white;
+            text-align: center;
+            z-index: 1;
+            position: absolute;
+            filter: brightness(100%); /* Normal brightness for text */
+        }
+
+        /* Normal brightness for inline image */
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            filter: brightness(100%);
+            z-index: 1;
+            position: relative;
+        }
+
+        /* Styling the content box */
+        .content-box {
+            width: 100%; /* Increased width */
+            max-width: 1000px; /* Larger max-width */
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            border: 6px solid #fff;
+            padding: 40px; /* Increased padding */
+            text-align: center;
+            justify-content: center;
+            z-index: 5; /* Ensure the box is above background */
+            position:relative;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* More prominent shadow */
+        }
+
+        .content-box h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .content-box p {
+            color: #666;
+        }
+        .home-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background-color: #010c01;
+            border: none;
+            color: rgb(248, 240, 240);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <a href="page 1.html" class="home-button">Back</a>
+    <h2>Data for 2016-2020</h2>
+    <p>This is the data for the years 2016 to 2020.</p>
+    
+    <!-- Larger content box centered in the page -->
+    <div class="content-box">
+        <h3>US Data from 2016-2020</h3>
+    <p><h2>This is the data for the years 2016 to 2020.</h2></p>
+    <img src="2016-2020.png" alt="Image for 2016-2020 Data"> <!-- Use correct path -->
+    
+
+        <p><h4><i>Average Temperature Increase: The U.S. experienced an average temperature rise of about 1.8°F (1.0°C) from 1901 to 2020, with significant increases noted in the 2015-2020 period. 016 was the warmest year on record until surpassed by 2019.
+            In 2015, U.S. CO2 emissions from fossil fuels were approximately 5,300 million metric tons
+            By 2019, this number had decreased to about 5,100 million metric tons, indicating a decline of roughly 3.8% over that period.
+            Atmospheric CO2 Levels: Atmospheric CO2 concentrations reached about 414 parts per million (ppm) in 2020, up from about 400 ppm in 2015, highlighting the ongoing increase in greenhouse gases.
+            
+        </i></h4>
+            </p>
+    </div>
+</body>
+</html>

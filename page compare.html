@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison between 2000 and 2024</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh; /* Full height of the viewport */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            background-color: lightblue; /* Background color for the body */
+        }
+
+        .content-box {
+            width: 90vw; /* Box width */
+            height: 90vh; /* Box height */
+            border: 2px solid white; /* Border for visibility */
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden; /* Hide overflow */
+            display: flex; /* Use flex to arrange children */
+            flex-direction: column; /* Column layout */
+            justify-content: flex-start; /* Align children at the top */
+            align-items: center; /* Center children horizontally */
+            background-color: rgba(255, 255, 255, 0.3); /* 30% transparent white background */
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center; /* Center the title */
+            color: rgb(0, 0, 0); /* Text color */
+            font-family: Arial, sans-serif; /* Font family */
+            margin: 0; /* Remove default margin */
+            padding: 10px; /* Padding around title */
+            border: 2px solid rgb(0, 0, 0); /* Border around title */
+            width: 40%; /* Width of the title */
+            border-radius: 10px;
+            background-color: rgba(47, 255, 0, 0.7); /* Rounded corners for title */
+            font-size: 18px; /* Smaller font size for title */
+        }
+
+        ul {
+            text-align: left; /* Align paragraph text to the left */
+            color: #000000; /* Text color */
+            font-family: Arial, sans-serif; /* Font family */
+            margin: 10px; /* Margin for paragraphs */
+            border: 2px solid rgb(0, 0, 0); /* Border around paragraph */
+            padding: 10px; /* Padding around paragraph */
+            width: 90%; /* Width of the paragraph */
+            border-radius: 5px; /* Rounded corners for paragraphs */
+            background-color: rgba(248, 248, 250, 0.6);
+            list-style-type: disc; /* Bullet points */
+            font-size: 14px; /* Reduced font size */
+        }
+
+        li {
+            margin: 8px 0; /* Spacing between list items */
+        }
+
+        .weather-image-2000 {
+            width: 240px; /* Image size for 2000 */
+            height: auto;
+            border: 2px solid #000; /* Image border */
+            border-radius: 10px;
+            margin-bottom: 15px; /* Space between image and text */
+        }
+
+        .weather-image-2024 {
+            width: 430px; /* Image size for 2024 */
+            height: auto;
+            border: 2px solid #000; /* Image border */
+            border-radius: 10px;
+            margin-bottom: 15px; /* Space between image and text */
+        }
+        .home-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background-color: #010c01;
+            border: none;
+            color: rgb(248, 240, 240);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <a href="page 1.html" class="home-button">Back</a>
+
+    <div class="content-box">
+        <h1>2000 Weather</h1>
+        <img src="left.jpg" alt="Weather Image 2000" class="weather-image-2000">
+        <ul>
+            <li>The average annual temperature in the United States in 2000 was 58.7°F.</li>
+            <li>In 2000, the United States' greenhouse gas emissions were 25.5 gigatons of carbon dioxide (GtCO2).</li>
+            <li>The average annual precipitation in the United States in 2000 was 18.39 inches.</li>
+            <li>In October 2000, 16.3% of the contiguous United States was affected by drought, down from 36% in August.</li>
+            <li>The highest temperature in the United States in 2000 was 104°F on July 16, and the lowest was 8°F on December 12.</li>
+            <li>Average sea levels were rising at about 1.7 to 2.0 mm per year.</li>
+            <li>Transportation contributed around 29% of emissions, and industry accounted for roughly 22% of emissions.</li>
+        </ul>
+    </div>
+
+    <div class="content-box">
+        <h1>2024 Weather</h1>
+        <img src="right.jpg" alt="Weather Image 2024" class="weather-image-2024">
+        <ul>
+            <li>In 2024, the United States' greenhouse gas emissions were 5,057 MtCO2 (million tons of CO2).</li>
+            <li>The January-August precipitation total for the contiguous U.S. was 22.93 inches.</li>
+            <li>As of September 2024, 28.5% of the U.S. has experienced drought conditions due to varying precipitation.</li>
+            <li>The hottest temperature was 91°F on August 26. The coldest high temperature was 49°F on July 2.</li>
+            <li>The rate of sea level rise is expected to be about 3 to 4 mm per year.</li>
+            <li>Electricity generation is projected to account for about 25-30% of total emissions.</li>
+            <li>Transportation is expected to remain around 29% of emissions.</li>
+            <li>Industry is anticipated to account for approximately 22% of emissions.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
